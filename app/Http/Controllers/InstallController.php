@@ -41,10 +41,8 @@ class InstallController extends Controller
         Store $store,
         App $app
     ) {
-        @set_time_limit(0);
-
         try {
-            $database->setup($request->db);
+//            $database->setup($request->db);
             $admin->setup($request->admin);
             $store->setup($request->store);
             $app->setup();

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+//dd(config('app.locale'));
+
 Route::get('install/pre-installation', 'InstallController@preInstallation')->name('install.pre_installation');
 Route::get('install/configuration', 'InstallController@getConfiguration')->name('install.configuration.show');
 Route::post('install/configuration', 'InstallController@postConfiguration')->name('install.configuration.post');

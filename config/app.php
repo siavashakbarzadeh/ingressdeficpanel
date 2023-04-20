@@ -12,7 +12,7 @@ return [
     */
     'name' => 'FleetCart',
 
-    'installed' => env('APP_INSTALLED', false),
+    'installed' => env('APP_INSTALLED', true),
 
     /*
    |--------------------------------------------------------------------------

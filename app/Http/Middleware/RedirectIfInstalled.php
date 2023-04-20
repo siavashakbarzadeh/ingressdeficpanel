@@ -15,10 +15,11 @@ class RedirectIfInstalled
      */
     public function handle($request, Closure $next)
     {
-        if (config('app.installed')) {
+        return redirect()->route('home');
+        /*if (config('app.installed')) {
             return redirect()->route('home');
         }
 
-        return $next($request);
+        return $next($request);*/
     }
 }
