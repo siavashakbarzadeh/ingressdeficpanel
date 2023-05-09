@@ -13,11 +13,11 @@ class AdminAccount
         $role = Role::create(['name' => 'Admin', 'permissions' => $this->getAdminRolePermissions()]);
 
         $admin = User::create([
-            'first_name' => "admin",
-            'last_name' => "admini",
-            'email' => "Akbarzadehsiavash@gmail.com",
-            'phone' => "+3295251425",
-            'password' => bcrypt("30yavash@Ayda6667"),
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
+            'email' => $data['email'],
+            'phone' => $data['phone'],
+            'password' => bcrypt($data['password']),
         ]);
 
         $activation = Activation::create($admin);

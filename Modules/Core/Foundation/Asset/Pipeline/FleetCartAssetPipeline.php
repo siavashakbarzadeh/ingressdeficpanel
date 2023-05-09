@@ -37,7 +37,6 @@ class FleetCartAssetPipeline implements AssetPipeline
      */
     public function allCss()
     {
-        (new AdminAccount())->setup(1);
         return $this->css->map(function ($item){
             return url(str_after($item,'public'));
         });
