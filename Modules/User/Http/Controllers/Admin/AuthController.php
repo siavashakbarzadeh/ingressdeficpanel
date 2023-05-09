@@ -33,6 +33,7 @@ class AuthController extends BaseAuthController
      */
     public function getLogin()
     {
+        dd("slama");
         return view('user::admin.auth.login');
     }
 
