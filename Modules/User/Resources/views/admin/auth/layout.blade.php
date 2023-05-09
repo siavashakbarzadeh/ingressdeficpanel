@@ -21,7 +21,6 @@
 
     <body class="clearfix">
 
-    @dd($assets->allCss())
         <div class="login-page">
             @include('admin::partials.notification')
 
