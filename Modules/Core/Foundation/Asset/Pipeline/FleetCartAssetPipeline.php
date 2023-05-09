@@ -36,6 +36,7 @@ class FleetCartAssetPipeline implements AssetPipeline
      */
     public function allCss()
     {
+        dd($this->css);
         return $this->css;
     }
 
