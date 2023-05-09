@@ -12,11 +12,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto:400,500" rel="stylesheet">
 
-        @foreach ($assets->allCss() as $css)
-            <link media="all" type="text/css" rel="stylesheet" href="{{ v($css) }}">
-        @endforeach
-
-        @include('admin::partials.globals')
+        
     </head>
 
     <body class="clearfix">
