@@ -33,6 +33,7 @@ class AuthController extends BaseAuthController
      */
     public function getLogin()
     {
+        dd("ok");
         return view('user::admin.auth.login');
     }
 
