@@ -37,8 +37,7 @@ class FleetCartAssetPipeline implements AssetPipeline
     public function allCss()
     {
         return $this->css->map(function ($item){
-            dd(str_after($item,'ingressdeficpanel'));
-            return str_after($item,'ingressdeficpanel');
+            return url(str_after($item,'public'));
         });
     }
 
@@ -49,7 +48,9 @@ class FleetCartAssetPipeline implements AssetPipeline
      */
     public function allJs()
     {
-        return $this->js;
+        return $this->js->map(function ($item){
+            return url(str_after($item,'public'));
+        });
     }
 
     /**
