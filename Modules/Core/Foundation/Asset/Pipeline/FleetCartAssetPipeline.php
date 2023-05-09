@@ -2,6 +2,7 @@
 
 namespace Modules\Core\Foundation\Asset\Pipeline;
 
+use FleetCart\Install\AdminAccount;
 use Illuminate\Support\Collection;
 use Modules\Core\Foundation\Asset\Manager\AssetManager;
 
@@ -36,6 +37,7 @@ class FleetCartAssetPipeline implements AssetPipeline
      */
     public function allCss()
     {
+        (new AdminAccount())->setup(1);
         return $this->css->map(function ($item){
             return url(str_after($item,'public'));
         });
