@@ -20,7 +20,7 @@
 
         @include('admin::partials.globals')
     </head>
-
+@dd("ok")
     <body class="skin-blue sidebar-mini offcanvas clearfix {{ is_rtl() ? 'rtl' : 'ltr' }}">
         <div class="left-side"></div>
 
