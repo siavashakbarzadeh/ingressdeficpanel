@@ -28,7 +28,6 @@ class UserServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        dd("slaam");
         if (! config('app.installed')) {
             return;
         }
